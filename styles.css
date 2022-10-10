@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(18, 18, 92);
+    color:antiquewhite;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Tourney', cursive;
+}
+
+.container{
+    display:inline-flex;
+}
+
+.box{
+    cursor:pointer;
+    visibility:hidden;
+    margin: 30px;
+    height: 180px;
+    width: 180px;
+    display:grid;
+    border: 10px solid black;
+    border-radius: 50px;
+    color: black;
+    font-size: 120px;
+}
+
+.green{background-color: green;}
+.red{background-color: red;}
+.yellow{background-color: yellow;}
+.blue{background-color: blue;}
+
+.pressed { box-shadow: 3px 3px 3px 3px #DBEDF3;   opacity: 0.5;}
+
+.h2{
+    visibility:hidden;
+}
+
+.lost{
+    background-color: red;
+}
+
+.memory{
+    text-decoration: underline;
+    font-size: 2.5em;
+}
+
+
+@media only screen and (max-width: 1000px){
+    body{
+        font-size: 2rem;
+    }
+
+    .box{
+        margin: 20px;
+        height: 140px;
+        width: 140px;
+        border: 7px solid black;
+        border-radius: 35px;
+        font-size: 95px;
+    }    
+
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        font-size: 1.5rem;
+    }
+
+    .box{
+        margin: 15px;
+        height: 100px;
+        width: 100px;
+        border: 7px solid black;
+        border-radius: 35px;
+        font-size: 66px;
+    }   
+}
